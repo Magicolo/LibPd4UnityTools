@@ -1,0 +1,90 @@
+#N canvas 291 207 1117 589 10;
+#X obj 24 439 usend~;
+#X obj 24 324 uspatialize~ Test;
+#X obj 534 439 usend~;
+#X obj 559 353 osc~ 3.4;
+#X obj 534 369 *~;
+#X obj 668 369 *~;
+#X obj 693 353 osc~ 1.4;
+#N canvas 666 545 310 149 source 0;
+#X obj 21 116 outlet~;
+#X obj 120 116 outlet~;
+#X obj 21 20 osc~ 500;
+#X obj 22 55 *~;
+#X obj 21 77 *~;
+#X obj 49 39 osc~ 95;
+#X obj 48 61 osc~ 3;
+#X obj 120 56 *~;
+#X obj 120 78 *~;
+#X obj 120 21 osc~ 46;
+#X obj 144 40 osc~ 347;
+#X obj 146 62 osc~ 2;
+#X obj 21 97 *~ 0.1;
+#X obj 120 97 *~ 0.1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 12 0;
+#X connect 5 0 3 1;
+#X connect 6 0 4 1;
+#X connect 7 0 8 0;
+#X connect 8 0 13 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 1;
+#X connect 11 0 8 1;
+#X connect 12 0 0 0;
+#X connect 13 0 1 0;
+#X restore 24 264 pd source;
+#X text 86 263 Simple AM audio source.;
+#X text 22 9 In Unity you will need to first follow these steps in
+order to make everything work properly:;
+#X text 22 49 1- In the menus \, click Magicolo's Tools/Create/AudioPlayer
+;
+#X text 22 109 3- In a script \, call PDPlayer.OpenPatch(nameOfPatch)
+where nameOfPatch should be "example" in order to make this patch work.
+;
+#X text 22 149 4- Then \, call PDPlayer.Play(moduleName \, soundName
+\, source) where moduleName should be "Test" in order to make this
+patch work \, soundName should be the name of a sound as is appears
+in the AudioPlayer's hierarchy and source should be a GameObject around
+which the sound will be spatialized.;
+#X text 68 439 Sends the audio back to Unity.;
+#X text 748 348 Simple pan effect to confirm that the Audio Source
+has really gone through Pure Data.;
+#X text 576 435 Sends the audio back to Unity. You can have as many
+[usend~] as you wish. Notice that you don't need to spatialize the
+sound with a [uspatialize~] because signals coming from Unity's AudioSource
+are already spatialized.;
+#X obj 533 264 ureceive~ Test_alchemy1;
+#X text 134 320 This object will spatialize the source around the source
+object defined in Unity. The argument is the name of the module which
+will tell Unity which module settings to use. You can create modules
+in Unity's inspector under the PDPlayer.cs script. You should always
+send signals that are synthesized by Pure Data in a [uspatialize~]
+object so the signal responds to Play \, Pause and Stop commands. If
+you don't want any spatialization to occur \, just leave the source
+to be equal to null.;
+#X text 22 69 2- Add sounds to the Resources folder (notice that the
+AudioPlayer will create a hierarchy reprensenting your sounds where
+you can change their settings).;
+#X text 677 260 This object will receive the audio signal from a Unity
+AudioSource. The argument is the name of the module followed by a "_"
+and the soundName. You will need to change the soundName to correspond
+with the soundName used in the PDPlayer.Play(moduleName \, soundName)
+method.;
+#X obj 24 512 s Debug;
+#X obj 24 493 env~;
+#X text 74 509 Anything sent to a [s Debug] object will be printed
+in Unity's console (there seemed to be problems with the [print] object).
+;
+#X connect 1 0 0 0;
+#X connect 1 0 21 0;
+#X connect 1 1 0 1;
+#X connect 3 0 4 1;
+#X connect 4 0 2 0;
+#X connect 5 0 2 1;
+#X connect 6 0 5 1;
+#X connect 7 0 1 0;
+#X connect 7 1 1 1;
+#X connect 16 0 4 0;
+#X connect 16 1 5 0;
+#X connect 21 0 20 0;

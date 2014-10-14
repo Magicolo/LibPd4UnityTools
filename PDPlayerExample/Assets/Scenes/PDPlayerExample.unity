@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+  m_NavMesh: {fileID: 0}
+--- !u!1 &658547725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 658547728}
+  - 114: {fileID: 658547727}
+  - 114: {fileID: 658547726}
+  m_Layer: 0
+  m_Name: AudioPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &658547726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658547725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0656c873bbcfd6246a98b242c120fa80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folderPath: E:/Projects/Repositories/LibPd4UnityTools/PDPlayerExample/Assets/Other
+    Assets/Magicolo/AudioTools/
+  audioPlayer: {fileID: 0}
+  audioSettings:
+    masterVolume: 0
+    maxVoices: 0
+    audioPlayer: {fileID: 0}
+    pdPlayer: {fileID: 0}
+  infoManager:
+    audioClipsPath: 
+    audioSources: []
+    currentAudioClips: []
+    audioClips: []
+    folderStructure: []
+    audioPlayer: {fileID: 0}
+    audioSettings:
+      masterVolume: 0
+      maxVoices: 0
+      audioPlayer: {fileID: 0}
+      pdPlayer: {fileID: 0}
+  coroutineHolder: {fileID: 0}
+  listener: {fileID: 0}
+  patchesPath: Patches
+  editorHelper:
+    defaultModule:
+      name: 
+      volume: 1
+      source: {fileID: 0}
+      volumeRolloff: 0
+      minDistance: 1
+      maxDistance: 500
+      panLevel: 1
+      pdPlayer: {fileID: 0}
+      spatializerShowing: 1
+    modules: []
+    icon: {fileID: 2800000, guid: ccd46f6f1d177b94b9c2b8c3381a1569, type: 3}
+    pdPlayer: {fileID: 658547726}
+  bridge:
+    sampleRate: 0
+    bufferSize: 0
+    bufferAmount: 0
+    initialized: 0
+    ticks: 0
+    pdPlayer: {fileID: 0}
+  communicator:
+    pdPlayer: {fileID: 0}
+  patchManager:
+    pdPlayer: {fileID: 0}
+  itemManager:
+    activeAudioItems: []
+    activeAudioObjects: []
+    inactiveAudioObjects: []
+    idCounter: 0
+    listener: {fileID: 0}
+    infoManager:
+      audioClipsPath: 
+      audioSources: []
+      currentAudioClips: []
+      audioClips: []
+      folderStructure: []
+      audioPlayer: {fileID: 0}
+      audioSettings:
+        masterVolume: 0
+        maxVoices: 0
+        audioPlayer: {fileID: 0}
+        pdPlayer: {fileID: 0}
+    player: {fileID: 0}
+    pdPlayer: {fileID: 0}
+  filterRead: {fileID: 0}
+--- !u!114 &658547727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658547725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5871d93c847d2134aa447d9ed8f93021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folderPath: E:/Projects/Repositories/LibPd4UnityTools/PDPlayerExample/Assets/Other
+    Assets/Magicolo/AudioTools/
+  audioPlayer: {fileID: 0}
+  audioSettings:
+    masterVolume: 1
+    maxVoices: 32
+    audioPlayer: {fileID: 658547727}
+    pdPlayer: {fileID: 658547726}
+  infoManager:
+    audioClipsPath: 
+    audioSources: []
+    currentAudioClips: []
+    audioClips: []
+    folderStructure: []
+    audioPlayer: {fileID: 0}
+    audioSettings:
+      masterVolume: 0
+      maxVoices: 0
+      audioPlayer: {fileID: 0}
+      pdPlayer: {fileID: 0}
+  coroutineHolder: {fileID: 0}
+  listener: {fileID: 0}
+  hierarchyManager:
+    audioClipsPath: 
+    audioSources:
+    - {fileID: 1991820669}
+    currentAudioClips:
+    - {fileID: 8300000, guid: 447dcac2b94337845a3a195177b08b2d, type: 3}
+    audioClips:
+    - {fileID: 8300000, guid: 447dcac2b94337845a3a195177b08b2d, type: 3}
+    folderStructure:
+    - {fileID: 0}
+    audioPlayer: {fileID: 658547727}
+    audioSettings:
+      masterVolume: 1
+      maxVoices: 32
+      audioPlayer: {fileID: 658547727}
+      pdPlayer: {fileID: 0}
+  editorHelper:
+    icon: {fileID: 1423506553, guid: 0000000000000000d000000000000000, type: 0}
+    audioPlayer: {fileID: 658547727}
+  itemManager:
+    activeAudioItems: []
+    activeAudioObjects: []
+    inactiveAudioObjects: []
+    idCounter: 0
+    listener: {fileID: 0}
+    infoManager:
+      audioClipsPath: 
+      audioSources: []
+      currentAudioClips: []
+      audioClips: []
+      folderStructure: []
+      audioPlayer: {fileID: 0}
+      audioSettings:
+        masterVolume: 0
+        maxVoices: 0
+        audioPlayer: {fileID: 0}
+        pdPlayer: {fileID: 0}
+    player: {fileID: 0}
+    audioPlayer: {fileID: 0}
+--- !u!4 &658547728
+Transform:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658547725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1991820671}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &856855238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 856855240}
+  - 114: {fileID: 856855239}
+  m_Layer: 0
+  m_Name: Example
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &856855239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856855238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc0033b337b9c54397bb9e01b7c0b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: alchemy1
+--- !u!4 &856855240
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856855238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &1004104148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1004104150}
+  - 81: {fileID: 1004104149}
+  m_Layer: 0
+  m_Name: Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1004104149
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004104148}
+  m_Enabled: 1
+--- !u!4 &1004104150
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004104148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &1991820668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1991820671}
+  - 114: {fileID: 1991820670}
+  - 82: {fileID: 1991820669}
+  m_Layer: 0
+  m_Name: alchemy1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1991820669
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1991820668}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 447dcac2b94337845a3a195177b08b2d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .150000006
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1991820670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1991820668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1692019db4f008145876baadc93794bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeIn: 1
+  fadeInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  fadeOut: 1
+  fadeOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  randomVolume: 0
+  randomPitch: 0
+  doNotKill: 0
+  clipInfo:
+    name: alchemy1
+    channels: 2
+    frequency: 48000
+    length: 4.26599979
+    samples: 204796
+    audioInfo: {fileID: 1991820670}
+--- !u!4 &1991820671
+Transform:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1991820668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 658547728}
+  m_RootOrder: 0

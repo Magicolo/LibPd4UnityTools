@@ -1,0 +1,15 @@
+#N canvas 256 692 290 135 10;
+#X obj 16 16 r SampleRate;
+#X obj 96 16 r BufferSize;
+#X obj 16 35 /;
+#X obj 16 74 *~;
+#X obj 16 55 phasor~;
+#X obj 96 57 * 2;
+#X obj 16 94 outlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 1 0 5 0;
+#X connect 2 0 4 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 1;

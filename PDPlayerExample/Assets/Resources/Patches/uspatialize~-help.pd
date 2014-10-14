@@ -1,0 +1,14 @@
+#N canvas 98 457 420 263 10;
+#X text 21 136 This object will spatialize an input around the source
+object defined in Unity. The argument is the name of the module which
+will tell Unity which module settings to use. You can create modules
+in Unity's inspector under the PDPlayer.cs script. You should always
+send signals that are synthesized by Pure Data in a [uspatialize~]
+object so the signal responds to Play \, Pause and Stop commands. If
+you don't want any spatialization to occur \, just leave the source
+in the module settings to be equal to null.;
+#X obj 24 50 uspatialize~ moduleName;
+#X text 20 85 -Outlet~ 2: Spatialized right channel;
+#X text 20 75 -Outlet~ 1: Spatialized left channel;
+#X text 20 25 -Inlet~ 2: Right channel Input;
+#X text 20 15 -Inlet~ 1: Left channel Input;

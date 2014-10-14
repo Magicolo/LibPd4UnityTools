@@ -1,0 +1,55 @@
+Base path: C:/Program Files/Unity 5.0.0b1/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-7808
+Cmd: getPlatforms
+Cmd: preprocess
+  insize=1812 outsize=1812 ok=1
+Cmd: preprocess
+  insize=1693 outsize=1693 ok=1
+Cmd: preprocess
+  insize=1545 outsize=1545 ok=1
+Cmd: preprocess
+  insize=1633 outsize=1633 ok=1
+Cmd: preprocess
+  insize=1380 outsize=1380 ok=1
+Cmd: preprocess
+  insize=1904 outsize=1904 ok=1
+Cmd: preprocess
+  insize=1401 outsize=1401 ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=5184 outsize=595 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=5184 outsize=280 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=2328 outsize=339 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=2328 outsize=240 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=1683 outsize=244 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1683 outsize=912 kw= ok=1
+Cmd: compileCompute
+  api=4 insize=407 outsize=412 ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=966 outsize=274 kw=SHADOWS_DEPTH ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=966 outsize=65 kw=SHADOWS_DEPTH ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=1210 outsize=807 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1210 outsize=3185 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=1122 outsize=783 kw=DIRECTIONAL SHADOWS_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1122 outsize=2050 kw=DIRECTIONAL SHADOWS_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=1210 outsize=935 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1210 outsize=3216 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=1366 outsize=807 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1366 outsize=1770 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=994 outsize=173 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=994 outsize=180 kw= ok=1

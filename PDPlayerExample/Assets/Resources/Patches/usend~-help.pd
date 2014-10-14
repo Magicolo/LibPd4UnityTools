@@ -1,0 +1,6 @@
+#N canvas 520 314 361 146 10;
+#X text 20 25 -Inlet~ 2: Right channel Input;
+#X text 20 15 -Inlet~ 1: Left channel Input;
+#X obj 25 50 usend~;
+#X text 22 100 Sends an audio signal to Unity. You can have as many
+[usend~] as you wish.;

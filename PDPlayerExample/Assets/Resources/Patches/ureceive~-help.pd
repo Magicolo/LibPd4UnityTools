@@ -1,0 +1,8 @@
+#N canvas 8 245 374 160 10;
+#X obj 13 11 ureceive~ moduleName_soundName;
+#X text 11 95 This object will receive the audio signal from a Unity
+AudioSource. The argument is the name of the module followed by a "_"
+and the name of the sound passed to the PDPlayer.Play(moduleName \,
+soundName) method.;
+#X text 10 35 -Outlet~ 1: Left channel;
+#X text 10 45 -Outlet~ 2: Right channel;

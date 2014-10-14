@@ -1,0 +1,41 @@
+Changelist:
+
+2.01:
+    - Free up memory when selection has changed.
+2.0:
+    - Unity 4.5 is new minimum version.
+    - Added IPropertyBackingFieldCompatible interface and
+      PropertyBackingFieldCompatibleObject base class, which are used to support
+      custom serializable structs and classes.
+    - You can now use setter logic that only triggers on value changes! Note
+      that custom serializable classes will always supply a clone.
+    - Full support for undo/redo and reverting to prefab for all property types
+      in any play mode state!
+    - PropertyBackingFieldDrawer.DisplayArrayPropertyField() and
+      PropertyBackingFieldDrawer.DisplayReorderableListPropertyField() were
+      removed and are no longer necessary!
+    - No naming assumptions are made for IList backing fields and their
+      respective properties anymore!
+    - Properties and their respective backing fields need not match type, as
+      long as the backing field type is assignable from the property type.
+    - Fixed bug that could cause some enum properties to not be set properly.
+    - Fixed bug calculating property drawer height when property was followed by
+      another whose name was prefixed with the preceding property's name.
+    - Changed some access modifiers and method signatures of utility methods
+      which should generally not be needed anyway.
+1.05:
+    - Added PropertyBackingFieldDrawer.DisplayArrayPropertyField() and
+      PropertyBackingFieldDrawer.DisplayReorderableListPropertyField() utility
+      methods for use in custom editors to invoke array property setters when
+      array size drops to 0.
+1.04:
+    - Fixed bug that could cause array setters on prefabs to infinitely invoke.
+    - Some accomodations for multi-select.
+    - Library updates.
+1.03:
+    - Fixed bug that prevented detection of nonpublic setters.
+1.02:
+    - Backing fields for properties with no setter now display as disabled
+      fields in the inspector, rather than throwing an exception.
+1.01:
+    - Property Backing Fields was released to the world!
