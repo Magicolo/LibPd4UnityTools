@@ -46,6 +46,7 @@ namespace Magicolo.AudioTools {
 		}
 
 		void CreateHierarchy() {
+			#if UNITY_EDITOR
 			foreach (AudioClip audioClip in audioClips) {
 				string audioClipPath = UnityEditor.AssetDatabase.GetAssetPath(audioClip).TrimStart(("Assets/Resources/" + audioClipsPath).ToCharArray());
 				string audioClipDirectory = Path.GetDirectoryName(audioClipPath);
@@ -59,6 +60,7 @@ namespace Magicolo.AudioTools {
 				child.transform.parent = parent.transform;
 				child.transform.Reset();
 			}
+			#endif
 		}
 		
 		GameObject GetOrAddFolder(string directory) {

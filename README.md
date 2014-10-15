@@ -2,7 +2,9 @@ LibPd4UnityTools
 ================
 
 
-Set of tools to facilitate the communication between LibPd and the Unity game engine.
+
+Set of tools to facilitate the communication between LibPd and the Unity game engine based on the LibPd4Unity project by Patrick Sebastien (https://github.com/patricksebastien/libpd4unity).
+
 
 
 ---PDPlayer---

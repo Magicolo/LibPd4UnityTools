@@ -38,7 +38,7 @@ public class PDPlayerEditor : CustomEditorBase {
 	
 	void ShowGeneralSettings(){
 		EditorGUI.BeginDisabledGroup(Application.isPlaying);
-		EditorGUILayout.PropertyField(serializedObject.FindProperty("patchesPath"), new GUIContent("Patches Path", "The path where the Pure Data patches are relative to Assets/Resources/."));
+		EditorGUILayout.PropertyField(serializedObject.FindProperty("patchesPath"), new GUIContent("Patches Path", "The path where the Pure Data patches are relative to Assets/StreamingAssets/."));
 		EditorGUI.EndDisabledGroup();
 	}
 

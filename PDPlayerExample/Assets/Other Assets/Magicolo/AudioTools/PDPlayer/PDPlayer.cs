@@ -343,7 +343,7 @@ public class PDPlayer : Magicolo.AudioTools.Player {
 	/// <summary>
 	/// Opens a patch and starts the DSP.
 	/// </summary>
-	/// <param name="patchName">The name of the patch (without the extension) to be opened relative to <c>Assets/Resources/<paramref name="patchesPath"/>/</c></param>.
+	/// <param name="patchName">The name of the patch (without the extension) to be opened relative to <c>Assets/StreamingAssets/<paramref name="patchesPath"/>/</c></param>.
 	public static void OpenPatch(string patchName) {
 		Instance.patchManager.Open(patchName);
 	}
@@ -351,7 +351,7 @@ public class PDPlayer : Magicolo.AudioTools.Player {
 	/// <summary>
 	/// Opens patches and starts the DSP.
 	/// </summary>
-	/// <param name="patchesName">The name of the patches (without the extension) to be opened relative to <c>Assets/Resources/<paramref name="patchesPath"/>/</c></param>
+	/// <param name="patchesName">The name of the patches (without the extension) to be opened relative to <c>Assets/StreamingAssets/<paramref name="patchesPath"/>/</c></param>
 	public static void OpenPatches(params string[] patchesName) {
 		Instance.patchManager.Open(patchesName);
 	}

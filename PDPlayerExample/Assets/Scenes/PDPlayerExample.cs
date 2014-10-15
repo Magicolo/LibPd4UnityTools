@@ -16,7 +16,7 @@ public class PDPlayerExample : MonoBehaviour {
 	public string soundName;
 	AudioItem audioItem;
 	
-	void Awake () {
+	void Start () {
 		// You first need to open a patch.
 		PDPlayer.OpenPatch("example");
 		

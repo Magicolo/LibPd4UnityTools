@@ -6,7 +6,6 @@ namespace Magicolo.AudioTools {
 	[System.Serializable]
 	public class AudioPlayerEditorHelper : EditorHelper {
 
-		public Texture icon;
 		public AudioPlayer audioPlayer;
 		
 		public AudioPlayerEditorHelper(AudioPlayer audioPlayer) {
@@ -15,7 +14,7 @@ namespace Magicolo.AudioTools {
 		
 		public override void OnHierarchyWindowItemGUI(int instanceid, Rect selectionrect) {
 			#if UNITY_EDITOR
-			icon = icon ?? UnityEditor.EditorGUIUtility.ObjectContent(null, typeof(AudioClip)).image;
+			Texture icon = UnityEditor.EditorGUIUtility.ObjectContent(null, typeof(AudioClip)).image;
 			GameObject gameObject = UnityEditor.EditorUtility.InstanceIDToObject(instanceid) as GameObject;
 			
 			if (gameObject == null || icon == null) return;

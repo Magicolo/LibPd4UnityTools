@@ -47,7 +47,7 @@ namespace Magicolo.AudioTools {
 		}
 		
 		string GetPatchPath(string patchName) {
-			string path = Application.dataPath + "/Resources/" + pdPlayer.patchesPath + "/" + patchName + ".pd";
+			string path = Application.streamingAssetsPath + Path.AltDirectorySeparatorChar + pdPlayer.patchesPath + Path.AltDirectorySeparatorChar + patchName + ".pd";
 		
 			#if UNITY_ANDROID && !UNITY_EDITOR
 			string patchJar = Application.persistentDataPath + "/" + patchName;

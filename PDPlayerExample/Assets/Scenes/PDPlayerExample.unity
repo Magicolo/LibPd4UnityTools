@@ -221,7 +221,6 @@ MonoBehaviour:
       audioPlayer: {fileID: 658547727}
       pdPlayer: {fileID: 0}
   editorHelper:
-    icon: {fileID: 1423506553, guid: 0000000000000000d000000000000000, type: 0}
     audioPlayer: {fileID: 658547727}
   itemManager:
     activeAudioItems: []
